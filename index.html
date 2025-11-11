@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Green Felt Billiards — Pool, Snooker, Carom</title>
+	<meta name="description" content="Modern billiards club: pool, snooker, and carom. Play, learn tips and rules, check scores, see events, and book a table.">
+	<meta name="theme-color" content="#0b6b3a">
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Green Felt Billiards — Pool, Snooker, Carom">
+	<meta property="og:description" content="Book a table, learn rules and tips, view events, and browse our gallery.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://example.com/">
+	<meta property="og:image" content="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=1200&q=80">
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Green Felt Billiards — Pool, Snooker, Carom">
+	<meta name="twitter:description" content="Modern club with pro tables and coaching.">
+	<meta name="twitter:image" content="images/og-cover.jpg">
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header" role="banner">
+		<div class="container header-inner">
+			<a class="logo" href="#hero" aria-label="Green Felt Billiards">Green Felt</a>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+				<span class="nav-toggle-bar" aria-hidden="true"></span>
+			</button>
+			<nav id="siteNav" class="site-nav" aria-label="Primary">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#rules">Rules & Tips</a></li>
+					<li><a href="#widget">Live Score</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+					<li><a href="#contact" class="btn btn--gold">Book a Table</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" tabindex="-1">
+		<section id="hero" class="hero section reveal" aria-label="Hero">
+			<div class="hero-bg" aria-hidden="true"></div>
+			<div class="container hero-content">
+				<h1 class="hero-title">Cue Up Great Moments</h1>
+				<p class="hero-tagline">Play pool, snooker, and carom on pro tables with a cozy felt-and-wood vibe.</p>
+				<div class="hero-ctas">
+					<a href="#contact" class="btn btn--primary">Book a Table</a>
+					<a href="#about" class="btn btn--outline">Learn More</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="section reveal" aria-labelledby="about-title">
+			<div class="container">
+				<header class="section-header">
+					<h2 id="about-title">About Our Club</h2>
+					<p>From classic snooker to fast-paced pool, we welcome beginners and pros. Established with passion for precise play and good company.</p>
+				</header>
+				<div class="cards">
+					<article class="card">
+						<img src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=1200&q=80" alt="Pool balls arranged in a triangle" loading="lazy" width="600" height="400">
+						<div class="card-body">
+							<h3>Pool</h3>
+							<p>8-ball, 9-ball, and straight pool on tournament-grade tables.</p>
+						</div>
+					</article>
+					<article class="card">
+						<img src="./0181.jpg" alt="Snooker table with reds and colors" loading="lazy" width="600" height="400">
+						<div class="card-body">
+							<h3>Snooker</h3>
+							<p>Full-size snooker with coaching sessions available.</p>
+						</div>
+					</article>
+					<article class="card">
+						<img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1200&q=80" alt="Carom billiards cue ball on a table" loading="lazy" width="600" height="400">
+						<div class="card-body">
+							<h3>Carom</h3>
+							<p>Carom tables for three-cushion fans and precision practice.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="rules" class="section reveal" aria-labelledby="rules-title">
+			<div class="container">
+				<header class="section-header">
+					<h2 id="rules-title">Rules & Tips</h2>
+					<p>Quick guides to get you playing confidently and courteously.</p>
+				</header>
+				<div class="tabs" role="tablist" aria-label="Rules and Tips">
+					<button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-rules" id="tab-rules">Rules</button>
+					<button class="tab" role="tab" aria-selected="false" aria-controls="panel-tech" id="tab-tech">Techniques</button>
+					<button class="tab" role="tab" aria-selected="false" aria-controls="panel-etq" id="tab-etq">Etiquette</button>
+				</div>
+				<div class="tab-panels">
+					<div class="tab-panel is-active" id="panel-rules" role="tabpanel" aria-labelledby="tab-rules">
+						<div class="accordion" id="rulesAcc">
+							<button class="acc-btn" aria-expanded="false" aria-controls="acc1">Pool (8-ball basics)</button>
+							<div id="acc1" class="acc-panel" role="region">
+								<p>Break, choose solids or stripes, pocket all of your group, then the 8-ball last. Fouls give ball-in-hand.</p>
+							</div>
+							<button class="acc-btn" aria-expanded="false" aria-controls="acc2">Snooker (frames & scoring)</button>
+							<div id="acc2" class="acc-panel" role="region">
+								<p>Pot reds then colors, scoring per color value; highest score wins the frame. Fouls award points to opponent.</p>
+							</div>
+							<button class="acc-btn" aria-expanded="false" aria-controls="acc3">Carom (three-cushion)</button>
+							<div id="acc3" class="acc-panel" role="region">
+								<p>Score by striking both object balls with the cue ball after at least three cushion contacts.</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab-panel" id="panel-tech" role="tabpanel" aria-labelledby="tab-tech" hidden>
+						<ul class="list">
+							<li><strong>Stance:</strong> Stable feet, chin low, cue level.</li>
+							<li><strong>Bridge:</strong> Solid hand bridge; keep the cue smooth.</li>
+							<li><strong>Aim:</strong> Visualize contact points; follow through.</li>
+						</ul>
+					</div>
+					<div class="tab-panel" id="panel-etq" role="tabpanel" aria-labelledby="tab-etq" hidden>
+						<ul class="list">
+							<li>Respect shots—stay still and quiet while others play.</li>
+							<li>Chalk away from the cloth; keep drinks off tables.</li>
+							<li>Call shots clearly in casual 8-ball games.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="widget" class="section reveal" aria-labelledby="widget-title">
+			<div class="container">
+				<header class="section-header">
+					<h2 id="widget-title">Live Score / Practice</h2>
+					<p>Keep score while you practice or play friendly matches.</p>
+				</header>
+				<div class="scoreboard" role="group" aria-label="Scoreboard">
+					<div class="player-switch">
+						<label for="playerName">Player</label>
+						<select id="playerName" aria-label="Select player">
+							<option>Player A</option>
+							<option>Player B</option>
+						</select>
+					</div>
+					<div class="score">
+						<div class="score-col">
+							<h3>Player A</h3>
+							<div class="score-value" id="scoreA" aria-live="polite">0</div>
+							<div class="score-controls">
+								<button class="btn btn--sm" data-action="decA" aria-label="Decrease Player A score">-</button>
+								<button class="btn btn--sm btn--gold" data-action="incA" aria-label="Increase Player A score">+</button>
+							</div>
+						</div>
+						<div class="score-col">
+							<h3>Player B</h3>
+							<div class="score-value" id="scoreB" aria-live="polite">0</div>
+							<div class="score-controls">
+								<button class="btn btn--sm" data-action="decB" aria-label="Decrease Player B score">-</button>
+								<button class="btn btn--sm btn--gold" data-action="incB" aria-label="Increase Player B score">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="score-actions">
+						<button class="btn btn--outline" id="resetScore">Reset</button>
+						<button class="btn" id="swapPlayers">Swap Players</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="events" class="section reveal" aria-labelledby="events-title">
+			<div class="container">
+				<header class="section-header">
+					<h2 id="events-title">Events & Bookings</h2>
+					<p>Weekly tournaments, coaching nights, and casual meetups.</p>
+				</header>
+				<div class="events-grid">
+					<article class="event-card">
+						<h3>9-Ball Weekly</h3>
+						<p class="muted">Fridays · 7:00 PM</p>
+						<p>Double-elimination bracket with prizes for top finishers.</p>
+					</article>
+					<article class="event-card">
+						<h3>Snooker Ladder</h3>
+						<p class="muted">Sundays · 5:00 PM</p>
+						<p>Climb the ladder—challenge players above you for ranking.</p>
+					</article>
+					<article class="event-card">
+						<h3>Intro Coaching</h3>
+						<p class="muted">Wednesdays · 6:00 PM</p>
+						<p>Learn stance, stroke, and aiming with friendly guidance.</p>
+					</article>
+				</div>
+
+				<form id="bookingForm" class="form" novalidate aria-labelledby="booking-title">
+					<h3 id="booking-title">Book a Table</h3>
+					<div class="form-grid">
+						<label> Name
+							<input type="text" name="name" required aria-required="true" autocomplete="name" placeholder="Your full name">
+							<span class="error" aria-live="polite"></span>
+						</label>
+						<label> Email
+							<input type="email" name="email" required aria-required="true" autocomplete="email" placeholder="you@example.com">
+							<span class="error" aria-live="polite"></span>
+						</label>
+						<label> Date
+							<input type="date" name="date" required aria-required="true">
+							<span class="error" aria-live="polite"></span>
+						</label>
+						<label> Time
+							<input type="time" name="time" required aria-required="true">
+							<span class="error" aria-live="polite"></span>
+						</label>
+						<label> Players
+							<input type="number" name="players" min="1" max="8" value="2" required aria-required="true">
+							<span class="error" aria-live="polite"></span>
+						</label>
+						<label> Notes (optional)
+							<input type="text" name="notes" placeholder="Occasion, preferences...">
+						</label>
+					</div>
+					<button class="btn btn--primary" type="submit">Submit Booking</button>
+					<p id="bookingStatus" class="status" role="status" aria-live="polite"></p>
+				</form>
+			</div>
+		</section>
+
+		<section id="gallery" class="section reveal" aria-labelledby="gallery-title">
+			<div class="container">
+				<header class="section-header">
+					<h2 id="gallery-title">Gallery</h2>
+					<p>Tap a photo to view it larger.</p>
+				</header>
+				<div class="gallery-grid">
+					<!-- Replace with your real images in images/ if desired -->
+					<a href="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=1600&q=80" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=1600&q=80">
+						<img src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=900&q=80" alt="Pool table" loading="lazy" width="600" height="400">
+					</a>
+					<a href="./0181.jpg" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1514580426461-392a82ad6c41?auto=format&fit=crop&w=1600&q=80">
+						<img src="./ilonmusk.jpg" alt="Snooker balls" loading="lazy" width="600" height="400">
+					</a>
+					<a href="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=80" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=80">
+						<img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=80" alt="Cue rack" loading="lazy" width="600" height="400">
+					</a>
+					<a href="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1600&q=80" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1600&q=80">
+						<img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=80" alt="Carom table" loading="lazy" width="600" height="400">
+					</a>
+					<a href="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80">
+						<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80" alt="Club interior" loading="lazy" width="600" height="400">
+					</a>
+					<a href="https://images.unsplash.com/photo-1534158914592-062992fbe900?auto=format&fit=crop&w=1600&q=80" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1534158914592-062992fbe900?auto=format&fit=crop&w=1600&q=80">
+						<img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?auto=format&fit=crop&w=900&q=80" alt="Player aiming" loading="lazy" width="600" height="400">
+					</a>
+				</div>
+			</div>
+			<!-- Lightbox modal -->
+			<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+				<button class="lightbox-close" id="lightboxClose" aria-label="Close image preview">×</button>
+				<img id="lightboxImg" alt="Expanded gallery image">
+			</div>
+		</section>
+
+		<section id="reviews" class="section reveal" aria-labelledby="reviews-title">
+			<div class="container">
+				<header class="section-header">
+					<h2 id="reviews-title">What Players Say</h2>
+				</header>
+				<div class="carousel" role="region" aria-roledescription="carousel" aria-label="Testimonials">
+					<div class="carousel-track" id="carouselTrack">
+						<figure class="testimonial">
+							<blockquote>Great atmosphere and pristine tables. The coaching helped my break-off immensely.</blockquote>
+							<figcaption>— Sam, Snooker Enthusiast</figcaption>
+						</figure>
+						<figure class="testimonial">
+							<blockquote>Perfect place for 9-ball. Friendly crowd and fair tournaments.</blockquote>
+							<figcaption>— Alex, 9-Ball Player</figcaption>
+						</figure>
+						<figure class="testimonial">
+							<blockquote>Love the wood-and-felt design and the music volume is just right.</blockquote>
+							<figcaption>— Jamie, Casual Player</figcaption>
+						</figure>
+					</div>
+					<div class="carousel-controls">
+						<button class="btn btn--sm" id="prevSlide" aria-label="Previous review">‹</button>
+						<button class="btn btn--sm" id="nextSlide" aria-label="Next review">›</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer" role="contentinfo">
+		<div class="container footer-grid">
+			<div>
+				<h3 class="logo">Green Felt</h3>
+				<p class="muted">123 Break Lane, Corner Pocket District</p>
+				<p class="muted">Open: Mon–Thu 12–22, Fri–Sat 12–24, Sun 12–20</p>
+			</div>
+			<form id="newsletterForm" class="newsletter" novalidate>
+				<label for="newsletterEmail" class="sr-only">Email</label>
+				<input id="newsletterEmail" name="email" type="email" placeholder="Your email" required aria-required="true">
+				<button class="btn btn--gold" type="submit">Subscribe</button>
+				<p id="newsletterStatus" class="status" role="status" aria-live="polite"></p>
+			</form>
+			<ul class="social" aria-label="Social links">
+				<li><a href="#" aria-label="Instagram">Instagram</a></li>
+				<li><a href="#" aria-label="Facebook">Facebook</a></li>
+				<li><a href="#" aria-label="Twitter">Twitter</a></li>
+			</ul>
+		</div>
+		<p class="copyright">© <span id="year"></span> Green Felt Billiards</p>
+	</footer>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
